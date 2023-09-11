@@ -6,6 +6,7 @@ import Currency  from "@/components/ui/currency";
 import Button from "@/components/ui/button";
 import { Product } from "@/types";
 import useCart from "@/hooks/use-cart";
+import Image from "next/image";
 
 interface InfoProps {
   data: Product
@@ -27,7 +28,7 @@ const Info: React.FC<InfoProps> = ({ data }) => {
         </p>
       </div>
       <hr className="my-4" />
-      <div className="flex flex-col gap-y-6">
+      <div className="flex gap-x-6">
         <div className="flex items-center gap-x-4">
           <h3 className="font-semibold text-black">Size:</h3>
           <div>
@@ -38,7 +39,21 @@ const Info: React.FC<InfoProps> = ({ data }) => {
           <h3 className="font-semibold text-black">Color:</h3>
           <div className="h-6 w-6 rounded-full border border-gray-600" style={{ backgroundColor: data?.color?.value }} />
         </div>
+        <div className="flex items-center gap-x-4">
+          <h3 className="font-semibold text-black">Artist:</h3>
+          <div>
+            {data?.artist?.name}
+          </div>
+            <Image src={data?.artist.imageUrl} width={100} height={100} alt="artist profiler"  className="h-10 w-10 rounded-full border border-gray-600"/>
+        </div>
+        
       </div>
+      <div className="flex flex-wrap items-center gap-x-4 mt-4">
+          <h3 className="font-semibold text-black">Description:</h3>
+          <div className="text-justify">
+            {data.description}
+          </div>
+        </div>
       <div className="mt-10 flex items-center gap-x-3">
         <Button onClick={onAddToCart} className="flex items-center gap-x-2">
           Add To Cart
@@ -50,3 +65,4 @@ const Info: React.FC<InfoProps> = ({ data }) => {
 }
  
 export default Info;
+

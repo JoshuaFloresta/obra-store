@@ -7,6 +7,8 @@ export interface Product {
   size: Size;
   color: Color;
   images: Image[]
+  description:string;
+  artist:Artist;
 };
 
 export interface Image {
@@ -24,6 +26,13 @@ export interface Category {
   id: string;
   name: string;
   billboard: Billboard;
+};
+
+
+export interface Artist {
+  id: string;
+  name: string;
+  imageUrl:string;
 };
 
 export interface Size {
