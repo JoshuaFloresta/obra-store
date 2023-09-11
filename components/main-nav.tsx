@@ -40,7 +40,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
 
       <DropdownMenu>
         <DropdownMenuTrigger className="flex font-semibold  transition-colors hover:text-black ">
-          Categories{" "}
+          Categories
           <ChevronDown className="text-neutral-800" strokeWidth={1} />{" "}
         </DropdownMenuTrigger>
         <DropdownMenuContent className="bg-white">
