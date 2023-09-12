@@ -139,7 +139,7 @@ const HomePage = () => {
               />
               <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
                 <div className="flex gap-4">
-                <Link href="/">
+                <Link href="/category/75ca6ab0-c0b5-4fd8-8bb9-8d85b7ebfbe4">
                   <p className="text-white text-lg font-medium">Textiles</p>
                </Link>
                 </div>
@@ -153,7 +153,9 @@ const HomePage = () => {
               />
               <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
                 <div className="flex gap-4">
-                  <p>Hello</p>
+                <Link href="/category/18354cdd-bcdc-40f1-98dc-2051fca26489">
+                  <p className="text-white text-lg font-medium">Wood Carving</p>
+               </Link>
                 </div>
               </div>
             </div>
@@ -168,7 +170,9 @@ const HomePage = () => {
               />
               <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
                 <div className="flex gap-4">
-                  <p>Hello</p>
+                <Link href="/category/adcd2e42-71ad-493d-8127-be85083140f0">
+                  <p className="text-white text-lg font-medium">Paintings</p>
+               </Link>
                 </div>
               </div>
             </div>
@@ -180,7 +184,9 @@ const HomePage = () => {
               />
               <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
                 <div className="flex gap-4">
-                  <p>Hello</p>
+                <Link href="/category/d80c9f45-7623-4895-896d-92fc2c2d716f">
+                  <p className="text-white text-lg font-medium">Pottery</p>
+               </Link>
                 </div>
               </div>
             </div>
@@ -192,7 +198,9 @@ const HomePage = () => {
               />
               <div className="overlay absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300">
                 <div className="flex gap-4">
-                  <p>Hello</p>
+                <Link href="/category/a3414a03-61bf-4717-8e69-3f98761e10aa">
+                  <p className="text-white text-lg font-medium">Graphic Design</p>
+               </Link>
                 </div>
               </div>
             </div>
