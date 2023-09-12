@@ -46,9 +46,8 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
         <DropdownMenuContent className="bg-white">
           <DropdownMenuSeparator />
           {routes.map((route) => (
-            <DropdownMenuItem className="bg-white">
+            <DropdownMenuItem key={route.href} className="bg-white">
               <Link
-                key={route.href}
                 href={route.href}
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-black",
@@ -59,6 +58,7 @@ const MainNav: React.FC<MainNavProps> = ({ data }) => {
               </Link>
             </DropdownMenuItem>
           ))}
+
           <DropdownMenuItem className="font-semibold  transition-colors hover:text-black ms-6"></DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
