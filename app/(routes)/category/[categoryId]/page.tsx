@@ -4,12 +4,14 @@ import Billboard from '@/components/ui/billboard';
 import ProductCard from '@/components/ui/product-card';
 import NoResults from '@/components/ui/no-results';
 
-import getProducts from '@/actions/get-products';
+import getProducts from "@/actions/get-products";
 import getCategory from '@/actions/get-indiv_category';
 import getSizes from '@/actions/get-sizes';
 import getColors from '@/actions/get-colors';
+
 import Filter from './components/filter';
 import MobileFilters from './components/mobile-filters';
+
 export const revalidate = 0;
 
 interface CategoryPageProps {
